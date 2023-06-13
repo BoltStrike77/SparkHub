@@ -1,0 +1,12 @@
+Python 3.8
+Flask
+SciKit-Learn
+Numpy
+Pandas
+Matplotlib
+Warnings
+time
+Imbalanced-Learning
+Seaborn
+XGBoost
+Pickle
