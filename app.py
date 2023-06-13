@@ -1,5 +1,6 @@
 from flask import *
 import pickle
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -11,11 +12,15 @@ def load_model():
 
 model = load_model()
 
-@app.route('/predict', methods=['PREDICT'])
+@app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
 
-    print(data)
+    df = pd.DataFrame(data, index=[0])
+
+    predictions = model.predict(df)
+
+    return jsonify({'predictions': predictions.tolist()})
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
