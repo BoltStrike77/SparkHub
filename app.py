@@ -7,10 +7,14 @@ app = Flask(__name__)
 def load_model():
     with open('model.pkl', 'rb') as file:
         model = pickle.load(file)
-    
+
     return model
 
 model = load_model()
+
+@app.route('/')
+def home():
+    return 'HOME'
 
 @app.route('/predict', methods=['POST'])
 def predict():
