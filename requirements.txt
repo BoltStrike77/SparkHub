@@ -1,2 +1,12 @@
-Flask==2.0.1
-gunicorn==20.1.0
+Python 3.8
+Flask
+SciKit-Learn
+Numpy
+Pandas
+Matplotlib
+Warnings
+time
+Imbalanced-Learning
+Seaborn
+XGBoost
+Pickle
