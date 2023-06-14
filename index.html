@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Gotto Online Job Portal</title>
+        <title>Starter Pack</title>
 
         <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,14 +126,16 @@ Bootstrap 5 HTML CSS Template
                                                 var result = Math.random();
                                                 var noPopup = document.getElementById("noPopup");
                                                 var yesPopup = document.getElementById("yesPopup");
-                                                noPopup.classList.toggle("hide");
-                                                yesPopup.classList.toggle("hide");
+                                                noPopup.classList.toggle("hide", true);
+                                                yesPopup.classList.toggle("hide", true);
                                                 if (result > 0.5) {
-                                                    noPopup.classList.toggle("hide");
+                                                    noPopup.classList.toggle("hide", true);
                                                     yesPopup.classList.toggle("show");
+                                                    yesPopup.classList.toggle("hide", true);
                                                 } else {
-                                                    yesPopup.classList.toggle("hide");
+                                                    yesPopup.classList.toggle("hide", true);
                                                     noPopup.classList.toggle("show");
+                                                    noPopup.classList.toggle("hide", true);
                                                 }
                                             }
                                          </script>
@@ -195,27 +197,25 @@ Bootstrap 5 HTML CSS Template
 
                         <div class="col-lg-6 col-12">
                             <div class="custom-text-block custom-border-radius-start">
-                                <h2 class="text-white mb-3">Gotto helps you an easier way to get new job</h2>
-
-                                <p class="text-white">You are not allowed to redistribute the template ZIP file on any other template collection website. Please contact us for more info. Thank you.</p>
+                                <h2 class="text-white mb-3">Startup Pack used SMOT to increase its accuracy and recall, increasing sampling efficiency</h2>
 
                                 <div class="d-flex mt-4">
                                     <div class="counter-thumb"> 
                                         <div class="d-flex">
-                                            <span class="counter-number" data-from="1" data-to="12" data-speed="1000"></span>
-                                            <span class="counter-number-text">M</span>
+                                            <span class="counter-number" data-from="1" data-to="98" data-speed="1000"></span>
+                                            <span class="counter-number-text">%</span>
                                         </div>
 
-                                        <span class="counter-text">Daily active users</span>
+                                        <span class="counter-text">Recall</span>
                                     </div> 
 
                                     <div class="counter-thumb">    
                                         <div class="d-flex">
-                                            <span class="counter-number" data-from="1" data-to="450" data-speed="1000"></span>
+                                            <span class="counter-number" data-from="1" data-to="100" data-speed="1000"></span>
                                             <span class="counter-number-text">k</span>
                                         </div>
 
-                                        <span class="counter-text">Opening jobs</span>
+                                        <span class="counter-text">Estimators</span>
                                     </div> 
                                 </div>
                             </div>
